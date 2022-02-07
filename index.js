@@ -1,3 +1,5 @@
+var c = prompt("Enter color code(in Hex):");
+document.getElementById("text").style.color = c;
 (function(w) {
     var canvas, ctx;
     var mouse = {
@@ -331,7 +333,7 @@
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         
         //This sets the color to draw with.
-        ctx.strokeStyle = "#00FFFF";
+        ctx.strokeStyle = c;
 
         //This calls the function to update the particle positions.
         update_particle();
